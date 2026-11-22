@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scott Robinson: Data Analytics Portfolio</title>
+<meta name="description" content="Scott Robinson's data analytics portfolio. MSBA candidate at Wake Forest looking for a data analyst role.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="repo-path">scott-robinson / <strong>portfolio</strong></div>
+    <nav class="topnav">
+      <a href="#changelog">Changelog</a>
+      <a href="#notes">Notes</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO / RELEASE HEADER -->
+  <section class="release" style="border-bottom:none;" aria-label="Introduction">
+    <div class="release-tagrow">
+      <span class="tag tag-version">v2026.11.0</span>
+      <span class="tag tag-latest">Latest</span>
+    </div>
+    <div class="release-body">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1 class="release-title">Scott Robinson</h1>
+          <p class="release-lede">
+            I'm finishing my Master's in Business Analytics at Wake Forest.
+            This fall I helped build a fraud model for a bank case challenge,
+            started a client project with Inmar Intelligence, and worked as an
+            exam proctor for the School of Business. Before that, I interned on
+            the global trade compliance team at Schneider Electric, where I built
+            an export jurisdiction tool that's still in use. I'm looking for a
+            data analyst role.
+          </p>
+        </div>
+        <figure class="hero-photo">
+          <img src="assets/scott-robinson.jpg" alt="Headshot of Scott Robinson" width="560" height="700">
+        </figure>
+      </div>
+
+      <ul class="release-highlights">
+        <li><span class="plus">+</span> Helped build a fraud policy that stops 54% of fraud vs. 38%, saving about $47K a month in a case challenge</li>
+        <li><span class="plus">+</span> Built an automation tool still in use at Schneider Electric after my internship ended</li>
+        <li><span class="plus">+</span> Working with Inmar Intelligence on a client project through spring 2027</li>
+      </ul>
+
+      <div class="badge-row">
+        <a class="badge" href="https://linkedin.com/in/scottrobinson04/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="badge" href="https://github.com/scott-c-robinson" target="_blank" rel="noopener">GitHub</a>
+        <a class="badge" href="assets/Robinson_Scott_Resume.pdf" download>Resume ↓</a>
+        <a class="badge" href="mailto:robis26@wfu.edu">Email</a>
+      </div>
+
+      <div class="code-block">~ MSBA Candidate          <span class="arrow">@</span> Wake Forest University <span class="dim">(May 2027)</span>
+~ Exam Proctor            <span class="arrow">@</span> WFU School of Business <span class="dim">(since Aug 2026)</span>
+~ Looking for             <span class="dim">a</span> <span class="hl">data analyst role</span>
+
+<span class="dim">Previously</span>
+~ Trade Compliance Intern <span class="arrow">@</span> Schneider Electric<span class="dim">, built the US Nexus Wizard</span>
+~ Team Captain / Secretary <span class="arrow">@</span> Elon Esports</div>
+
+      <div class="release-meta">
+        <div>
+          <p class="meta-label">Origin</p>
+          <p class="meta-value">B.S. Business Analytics, Elon University</p>
+        </div>
+        <div>
+          <p class="meta-label">Current build</p>
+          <p class="meta-value">M.S. Business Analytics, Wake Forest (May 2027)</p>
+        </div>
+        <div>
+          <p class="meta-label">Target</p>
+          <p class="meta-value">Data analyst roles</p>
+        </div>
+        <div>
+          <p class="meta-label">Verified by</p>
+          <p class="meta-value">Schneider Electric, Global Trade Compliance</p>
+        </div>
+        <div>
+          <p class="meta-label">Core stack</p>
+          <p class="meta-value">Python · SQL · Tableau · Power BI</p>
+        </div>
+        <div>
+          <p class="meta-label">Location</p>
+          <p class="meta-value">Winston-Salem, NC</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHANGELOG / WORK EVIDENCE -->
+  <section id="changelog" aria-labelledby="changelog-title">
+    <div class="section-head">
+      <h2 class="section-title" id="changelog-title">Changelog</h2>
+      <p class="section-lede">Two projects complete and one in motion.</p>
+    </div>
+
+    <article class="entry reveal">
+      <div class="entry-head">
+        <span class="entry-version">v2.0.0</span>
+        <span class="status status-complete">Complete</span>
+      </div>
+      <p class="entry-commit"><span class="type">feat(ml):</span> fraud score and approval policy</p>
+      <h3 class="entry-title">DFS Fraud Model</h3>
+      <p class="entry-sub">Wake Forest MSBA Analytics Challenge, Team Project</p>
+      <div class="entry-grid">
+        <div>
+          <span class="k">Context</span>
+          <p>Deacon Financial Services, a bank case, was losing money to bonus fraud during a new account promotion. Leadership asked if we could spot fraud at the point of application, and what they should do about it.</p>
+        </div>
+        <div>
+          <span class="k">My role</span>
+          <p>Built one of the team's 35 models. My random forest tied for lowest expected cost per account. I wrote the supporting analysis and recommendation sections of our memos, helped build the deck, and presented the closing slides to faculty and industry professionals.</p>
+        </div>
+        <div>
+          <span class="k">Outcome</span>
+          <p>Our recommended model, a random forest with network features (0.880 test AUC), stops 54% of fraud vs. 38% under the prior policy. That cuts expected cost per account by 24%, about $47,000 every 30 days.</p>
+        </div>
+      </div>
+      <div class="code-block">Tools     <span class="arrow">→</span>  Python · scikit-learn · CatBoost · SQL · DBeaver
+Approach  <span class="arrow">→</span>  Logistic regression <span class="arrow">→</span> 9 ML model types <span class="arrow">→</span> random forest + network features</div>
+    </article>
+
+    <article class="entry reveal">
+      <div class="entry-head">
+        <span class="entry-version">v0.3.0</span>
+        <span class="status status-progress">In progress</span>
+      </div>
+      <p class="entry-commit"><span class="type">feat(client):</span> HR technology adoption playbook</p>
+      <h3 class="entry-title">Inmar Intelligence Practicum</h3>
+      <p class="entry-sub">Wake Forest MSBA, Client Project</p>
+      <div class="entry-grid">
+        <div>
+          <span class="k">Context</span>
+          <p>Inmar wants more employees to adopt new HR technology when it rolls out. Our five-person team is building a launch and adoption playbook with small, medium, and large rollout pathways.</p>
+        </div>
+        <div>
+          <span class="k">My role</span>
+          <p>I'm the team's devil's advocate. I pressure-test our scope and key question before we commit to them, so we answer the question the client actually needs answered.</p>
+        </div>
+        <div>
+          <span class="k">Status</span>
+          <p>NDAs are signed and stakeholder interviews are coming up. We're refining the scope and key question and building our network of contacts at Inmar. The project runs through spring 2027.</p>
+        </div>
+      </div>
+      <div class="code-block">Approach  <span class="arrow">→</span>  Understand the business <span class="arrow">→</span> key question <span class="arrow">→</span> evidence <span class="arrow">→</span> data</div>
+    </article>
+
+    <article class="entry reveal">
+      <div class="entry-head">
+        <span class="entry-version">v1.2.0</span>
+        <span class="status status-complete">Complete</span>
+      </div>
+      <p class="entry-commit"><span class="type">feat(compliance):</span> automated export jurisdiction determination</p>
+      <h3 class="entry-title">US Nexus Wizard</h3>
+      <p class="entry-sub">Schneider Electric, Global Trade Compliance</p>
+      <div class="entry-grid">
+        <div>
+          <span class="k">Context</span>
+          <p>Determining U.S. export jurisdiction was manual and expert-dependent. Every request went through a small compliance team, which created a bottleneck.</p>
+        </div>
+        <div>
+          <span class="k">My role</span>
+          <p>Designed and built an automated jurisdiction-determination tool from scratch using Microsoft Lists and Power Automate. Turned compliance logic into a self-serve workflow.</p>
+        </div>
+        <div>
+          <span class="k">Outcome</span>
+          <p>My internship ended before the tool fully rolled out. It's since been incorporated into a bigger export control checker at Schneider Electric, and the logic I built is still part of it.</p>
+        </div>
+      </div>
+      <div class="code-block">Tools     <span class="arrow">→</span>  Power Automate · Microsoft Lists · SharePoint
+Approach  <span class="arrow">→</span>  Manual jurisdiction lookup <span class="arrow">→</span> self-serve automated workflow</div>
+    </article>
+  </section>
+
+  <!-- NOTES -->
+  <section id="notes" aria-labelledby="notes-title">
+    <div class="section-head">
+      <h2 class="section-title" id="notes-title">Field Notes</h2>
+      <p class="section-lede">What I learned this semester, and how it changes the way I work.</p>
+    </div>
+
+    <div class="notes-grid">
+      <div class="note-card reveal">
+        <span class="k">Better data beats better algorithms</span>
+        <p>On the DFS case, five different algorithms landed within 0.004 AUC of each other once they had the same data. Adding network data (shared devices, phones, and payout accounts) moved AUC eight times more than switching models did. Now I ask what data is missing before I ask which model to use.</p>
+      </div>
+      <div class="note-card reveal">
+        <span class="k">New data can look better than it is</span>
+        <p>In the same case, September fraud looked like 1.4% on October 1 and 5.1% a month later. Young accounts look safe because their fraud hasn't been caught yet. I check how mature the labels are before I trust any recent performance number.</p>
+      </div>
+      <div class="note-card reveal">
+        <span class="k">Who pays when AI agents cause harm</span>
+        <p>In a position paper, I argued that liability for harm caused by agentic AI should be shared between the developer and the company using it. My partner argued the deploying company should carry most of it. In our combined paper her side led, and mine both challenged and supported it. It made me think harder about where human review belongs in any automated decision.</p>
+      </div>
+      <div class="note-card reveal">
+        <span class="k">Where I'm going next</span>
+        <p>I want a data analyst role where I build both the analysis and the process behind it, like the Nexus Wizard and the DFS approval policy. A model is only useful once someone knows what to do with its output.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK / SKILLS -->
+  <section id="skills" aria-labelledby="skills-title">
+    <div class="section-head">
+      <h2 class="section-title" id="skills-title">Skills</h2>
+    </div>
+    <div class="stack-grid reveal">
+      <div class="stack-cell"><span class="k">Language</span><span class="v">Python</span></div>
+      <div class="stack-cell"><span class="k">Language</span><span class="v">SQL</span></div>
+      <div class="stack-cell"><span class="k">Database</span><span class="v">PostgreSQL</span></div>
+      <div class="stack-cell"><span class="k">Modeling</span><span class="v">Linear Regression</span></div>
+      <div class="stack-cell"><span class="k">Modeling</span><span class="v">Logistic Regression</span></div>
+      <div class="stack-cell"><span class="k">Modeling</span><span class="v">Clustering Analysis</span></div>
+      <div class="stack-cell"><span class="k">Machine Learning</span><span class="v">Random Forest</span></div>
+      <div class="stack-cell"><span class="k">Machine Learning</span><span class="v">XGBoost</span></div>
+      <div class="stack-cell"><span class="k">Machine Learning</span><span class="v">scikit-learn</span></div>
+      <div class="stack-cell"><span class="k">Visualization</span><span class="v">Tableau</span></div>
+      <div class="stack-cell"><span class="k">Visualization</span><span class="v">Power BI</span></div>
+      <div class="stack-cell"><span class="k">Automation</span><span class="v">Power Automate</span></div>
+      <div class="stack-cell"><span class="k">Automation</span><span class="v">Microsoft Lists</span></div>
+      <div class="stack-cell"><span class="k">Productivity</span><span class="v">Excel</span></div>
+      <div class="stack-cell"><span class="k">Productivity</span><span class="v">PowerPoint</span></div>
+      <div class="stack-cell"><span class="k">AI Tools</span><span class="v">Claude (Skills / AI agents)</span></div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" aria-labelledby="resume-title">
+    <div class="section-head">
+      <h2 class="section-title" id="resume-title">Resume</h2>
+    </div>
+    <a class="resume-preview reveal" href="assets/Robinson_Scott_Resume.pdf" target="_blank" rel="noopener" aria-label="Open full resume PDF">
+      <img src="assets/Robinson_Scott_Resume-page-1.jpg" alt="Scott Robinson's resume">
+    </a>
+    <div class="resume-panel reveal">
+      <div class="resume-copy">
+        <span class="k">Attachment</span>
+        <p>Full resume, updated November 2026.</p>
+      </div>
+      <a class="btn" href="assets/Robinson_Scott_Resume.pdf" download>Download PDF ↓</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <div class="footer-row">
+    <span>Built with HTML &amp; CSS, no frameworks. Last updated November 2026</span>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/scottrobinson04/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/scott-c-robinson" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:robis26@wfu.edu">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
